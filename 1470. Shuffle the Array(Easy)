@@ -1,0 +1,9 @@
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        numbers = []
+        i = 0
+        while i < n:
+            numbers += [nums[i]]
+            numbers += [nums[i + n]]
+            i += 1
+        return numbers
